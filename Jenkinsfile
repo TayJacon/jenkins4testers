@@ -5,11 +5,11 @@ pipeline {
             }
         }
         stages {
-            stage("Build") {
+            stages("Build") {
                 steps {
                     sh "bundle install"
             }
-            stage("Tests") {
+            stages("Tests") {
                 steps { sh "echo 'simulando um teste automatizado'"}
             }
         }
