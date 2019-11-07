@@ -2,6 +2,7 @@ pipeline {
     agent {
         docker {
             image "ruby:alpine"
+            argd "--network=qadocker"
         }
     }
     stages {
