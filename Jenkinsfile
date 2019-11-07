@@ -2,8 +2,9 @@ pipeline {
     agent {
         docker {
             image "ruby"
-            }
         }
+    }
+        {
         stages {
             stages("Build") {
                 steps {
